@@ -55,6 +55,9 @@ def q7
 
   # 以下に回答を記載
   p array.map! { |num| num.to_i }
+  # &:を使用して書き換える
+
+  p array.map!(&:to_i)
 
   # 以下は変更しないで下さい
   p array
@@ -68,6 +71,12 @@ def q8
   p programming_languages2
   programming_languages2 = programming_languages.map { |lang| lang.upcase! }
   p programming_languages2
+  puts "-------------------"
+  # &:を使用して書き換える
+  programming_languages.map!(&:capitalize)
+  p programming_languages
+  upper_case_programming_languages = programming_languages.map(&:upcase)
+  p upper_case_programming_languages
   # 以下は変更しないで下さい
   p programming_languages
   p upper_case_programming_languages

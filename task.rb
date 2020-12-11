@@ -155,16 +155,20 @@ def q15
   data2 = { name: "yamada", hobby: "baseball", role: "normal" }
 
   # 以下に回答を記載
-  if data1.include?(:age)
-    puts "OK"
-  else
-    puts "NG"
-  end
-  if data2.include?(:age)
-    puts "OK"
-  else
-    puts "NG"
-  end
+  #if data1.include?(:age)
+  # puts "OK"
+  #else
+  # puts "NG"
+  #end
+  #if data2.include?(:age)
+  # puts "OK"
+  #else
+  # puts "NG"
+  #end
+
+  #以下に修正した回答を記載
+  p data1.include?(:age) ? "OK" : "NG"
+  p data2.include?(:age) ? "OK" : "NG"
 end
 
 def q16
@@ -176,10 +180,10 @@ def q16
   ]
 
   # 以下に回答を記載
-  
-  users.each. do |user|
-    puts "私の名前は.#{:name}です。年齢は #{:age}歳です。"
-  end
+
+  #users.each. do |user|
+  # puts "私の名前は.#{:name}です。年齢は #{:age}歳です。"
+  #end
 end
 
 class UserQ17
